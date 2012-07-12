@@ -1,0 +1,26 @@
+<taglib xmlns="http://java.sun.com/xml/ns/javaee"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-jsptaglibrary_2_1.xsd"
+    version="2.1">
+
+  <description>EarlyResolution Core Tag Library</description>
+  <display-name>ER Tag core</display-name>
+  <tlib-version>1.0</tlib-version>
+	<short-name>er</short-name>
+  <uri>http://mywebsite.com/tags/wpsj</uri>
+
+	<tag>
+	    <description>
+	      Show user profiles
+	    </description>
+		<name>userProfiles</name>
+		<tag-class>csc.traning.wpsj.tags.UserProfilesTag</tag-class>
+		<body-content>empty</body-content>
+		<attribute>
+			<name>user</name>
+			<required>true</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+	
+</taglib>
